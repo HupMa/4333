@@ -30,7 +30,7 @@ jobs:
 
       - name: 下载 worker.js
         run: |
-          wget -O origin.js https://raw.githubusercontent.com/HupMa/qpshshh/refs/heads/main/_worker.src.js
+          wget -O origin.js https://github.com/byJoey/ech-wk/blob/dc0698fb104a5ae750b40527acd50c3c3b538532/_worker.js
       - name: 混淆 worker.js
         run: |
           javascript-obfuscator origin.js --output _worker.js \
@@ -49,6 +49,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           branch: main
-          commit_message: ' 新最新板'
+          commit_message: ' 新22板'
           commit_author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
           push_options: '--set-upstream'
