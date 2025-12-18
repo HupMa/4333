@@ -30,7 +30,7 @@ jobs:
 
       - name: 下载 worker.js
         run: |
-          wget -O origin.js https://github.com/byJoey/ech-wk/blob/dc0698fb104a5ae750b40527acd50c3c3b538532/_worker.js
+          wget -O origin.js https://raw.githubusercontent.com/HupMa/4333/refs/heads/main/origin.js
       - name: 混淆 worker.js
         run: |
           javascript-obfuscator origin.js --output _worker.js \
